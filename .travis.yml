@@ -9,6 +9,7 @@ notifications:
   email:
     recipients:
       - verdevopst@gmail.com
+      - hibbgr@gmail.com
     on_success: always
     on_failure: always
 branches:
