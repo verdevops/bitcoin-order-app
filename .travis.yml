@@ -20,7 +20,10 @@ before_script:
 script:
   - ng build --prod --base-href https://verdevops.github.io/bitcoin-order-app/
 after_success:
-    - git push origin :development
+  - git push origin :development
+  - ng lint
+  - npm audit fix
+
   
 deploy:
   provider: pages
